@@ -1,0 +1,32 @@
+# Never commit interception CAs.
+#
+# A CA shipped in this repo would be silently installed as a system trust anchor
+# by anyone running ./host/install.sh, handing its key holder MITM capability on their
+# device. Each user supplies their own via ./host/prepare-cert.sh.
+cacerts/*
+!cacerts/.gitkeep
+
+# Local backups / scratch
+*.bak
+*.der
+*.pem
+*.crt
+
+# Host verification/build outputs
+__pycache__/
+*.class
+certdroid.tar.gz
+
+# Private keys and credential bundles
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+.env
+.env.*
+
+# Generated release archives and host metadata
+*.tar.gz
+*.zip
+.DS_Store

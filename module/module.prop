@@ -1,0 +1,6 @@
+id=certdroid
+name=CertDroid
+version=v1.1.2
+versionCode=4
+author=Vasile Revnic
+description=Installs your proxy CA (Burp, mitmproxy, ZAP) as a trusted system certificate. Survives reboots.
