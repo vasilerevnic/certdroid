@@ -5,10 +5,16 @@ Magisk's monotonically increasing `versionCode`.
 
 ## Unreleased
 
+No changes yet.
+
+## 2.0.0 — 2026-10-04
+
+- Release CertDroid with Magisk module ID `certdroid`, versionCode 5, and
+  boot-time CA trust-store activation.
 - Group host scripts under `host/` and Android module scripts under `module/`;
   the installed Magisk layout is unchanged.
-- Rename the host removal command to `host/uninstall-via-adb.sh` to distinguish
-  it from Magisk's required `uninstall.sh` hook.
+- Name the host removal command `host/uninstall-via-adb.sh` to distinguish it
+  from Magisk's required `uninstall.sh` hook.
 
 ## 1.1.2 — 2026-10-01
 
